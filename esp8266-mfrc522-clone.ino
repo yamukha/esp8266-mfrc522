@@ -31,14 +31,9 @@ byte buffer[18];
 byte block;
 byte waarde[64][16];
 MFRC522::StatusCode status;
-    
 MFRC522::MIFARE_Key key;
-
-
 char choice;
-/*
- * Initialize.
- */
+
 void setup() {
     Serial.begin(115200);         // Initialize serial communications with the PC
     delay(200);
@@ -52,18 +47,14 @@ void setup() {
     }
 }
 
-
-
- //Via seriele monitor de bytes uitlezen in hexadecimaal
- 
+// in hexadecimaal 
 void dump_byte_array(byte *buffer, byte bufferSize) {
     for (byte i = 0; i < bufferSize; i++) {
         Serial.print(buffer[i] < 0x10 ? " 0" : " ");
         Serial.print(buffer[i], HEX);
     }
 }
-//Via seriele monitor de bytes uitlezen in ASCI
-
+// in ASCI
 void dump_byte_array1(byte *buffer, byte bufferSize) {
   for (byte i = 0; i < bufferSize; i++) {
     Serial.print(buffer[i] < 0x10 ? " 0" : " ");
@@ -131,12 +122,8 @@ bool try_key(MFRC522::MIFARE_Key *key)
     start();
 }
 
-/*
- * Main loop.
- */
 void loop() {
-  start();
-    
+  start();    
 }
 
 void start(){
@@ -160,7 +147,7 @@ void start(){
     }
 }
 
-void keuze2(){ //Test waardes in blokken
+void keuze2(){ //Test blocks quard
   
   for(block = 4; block <= 62; block++){
     if(block == 7 || block == 11 || block == 15 || block == 19 || block == 23 || block == 27 || block == 31 || block == 35 || block == 39 || block == 43 || block == 47 || block == 51 || block == 55 || block == 59){
@@ -194,7 +181,7 @@ void keuze3(){ //Copy the data in the new card
     if (mfrc522.PICC_ReadCardSerial()) {
 
     // Show some details of the PICC (that is: the tag/card)
-      Serial.print(F("Card UID:"));
+      Serial.print(F("\nCard UID:"));
       dump_byte_array(mfrc522.uid.uidByte, mfrc522.uid.size);
       Serial.println();
       Serial.print(F("PICC type: "));
