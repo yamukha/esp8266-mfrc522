@@ -26,6 +26,6 @@ After download to NodeMCU:\
 In Serial Monitor send 1\
 Read RFID card\
 In Serial Monitor send 2\
-New data will be prepared to write blocks 
+New data will be prepared to write blocks\
 In Serial Monitor send 3\
 Data will be cloned to RFID card
