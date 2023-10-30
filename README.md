@@ -11,10 +11,17 @@ https://alexgyver.ru/arduino-rfid/
 
 # Wiring ref.youtube video
 NodeMCU - MFRC522  (PIN)
+##
      D1 - RST  (7)
+##
      D2 - SDA  (1)
+##
      D5 - SCK  (2)
+##
      D6 - MISO (3)
+##
      D7 - MOSI (4)
+##
      G  - GND  (6)
+##
      3V - 3.3V (8)
