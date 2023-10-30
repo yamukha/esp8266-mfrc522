@@ -21,7 +21,7 @@ NodeMCU - MFRC522  (PIN) \
 
 # Usage
 Serial port baud rate 115200\
-Build under Arduino IDE i.e. version 1.8.20\
+Build esp8266-mfrc522-clone.ino under Arduino IDE i.e. version 1.8.20\
 After download to NodeMCU:\
 In Serial Monitor send 1\
 Read RFID card\
