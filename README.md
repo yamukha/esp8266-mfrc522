@@ -17,4 +17,4 @@ NodeMCU - MFRC522  (PIN) \
      D6 - MISO (3) \
      D7 - MOSI (4) \
      G  - GND  (6) \
-     3V - 3.3V (8) \
+     3V - 3.3V (8)
