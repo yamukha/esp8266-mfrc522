@@ -9,7 +9,7 @@ https://github.com/XaviTorello/mifare-classic-toolkit/blob/master/rfid_defaultKe
 
 https://alexgyver.ru/arduino-rfid/
 
-#Wiring ref.youtube video
+# Wiring ref.youtube video
 NodeMCU - MFRC522  (PIN)
      D1 - RST  (7)
      D2 - SDA  (1)
